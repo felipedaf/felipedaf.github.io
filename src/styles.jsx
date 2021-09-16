@@ -11,6 +11,4 @@ export const ContentContainer = styled.div`
   max-width: 1000px;
   height: 100vh;
   margin: auto;
-  color: white;
-  font-size: 400px;
 `;
