@@ -3,7 +3,7 @@ import { Wrapper, ContentContainer } from "./styles";
 
 const App = () => (
   <Wrapper>
-    <ContentContainer></ContentContainer>
+    <ContentContainer>Itallo corno</ContentContainer>
   </Wrapper>
 );
 
