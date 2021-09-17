@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "./colors";
 
 export const Wrapper = styled.div`
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   background-color: ${colors.dark};
 `;
@@ -14,7 +14,7 @@ export const ContentContainer = styled.div`
   margin: auto;
 `;
 
-export const FirstSection = styled.div`
+export const Section = styled.div`
   display: flex;
   margin-bottom: 240px;
 `;
@@ -76,4 +76,11 @@ export const SnippetContainer1 = styled.div`
 export const SnippetContainer2 = styled.div`
   position: absolute;
   bottom: -40%;
+`;
+
+export const MainSection = styled.div`
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  width: 100%;
 `;
