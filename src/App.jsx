@@ -41,8 +41,8 @@ const App = () => (
             <Introduction>
               I&apos;m a software engineer and Computer Science student
               specializing in building (and occasionally designing) large scale
-              distributed systems. Currently, I&apos;m focused on build backend
-              systems and how to scale it.
+              distributed systems. Currently, I&apos;m focused on how to build
+              backend systems and scale it.
             </Introduction>
           </PresentationContainer>
           <PresentationContentContainer>
