@@ -1,5 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import colors from "../../colors";
+
+const blink = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 75%;
+  }
+
+  100% {
+    opacity: 75%;
+  }
+`;
 
 export const Wrapper = styled.div`
   padding: 30px 20px;
@@ -26,4 +43,17 @@ export const InsideProps = styled.div`
 export const Normal = styled.span`
   color: ${({ color }) => colors[color || "light"]};
   opacity: 90%;
+`;
+
+export const TextEditor = styled.div`
+  width: 6px;
+  height: 1rem;
+  background: ${colors.light};
+  opacity: 75%;
+  margin-left: 2px;
+  display: inline-block;
+  top: 4px;
+  position: relative;
+  animation-delay: ${({ delay }) => (delay ? "-0.8s" : "-0.2s")};
+  animation: ${blink} 0.8s linear infinite;
 `;
