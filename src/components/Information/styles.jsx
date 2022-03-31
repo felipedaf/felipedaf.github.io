@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import colors from "../../colors";
 
 export const Wrapper = styled.div`
   ${(props) =>
     props.shifted &&
     css`
-      padding-left: 50px;
+      padding-left: 120px;
     `}
 
   width: 100%;
