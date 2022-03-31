@@ -19,6 +19,12 @@ export const Section = styled.div`
   margin-bottom: 240px;
 `;
 
+export const ShiftedSection = styled.div`
+  display: flex;
+  margin-bottom: 240px;
+  padding-left: 50px;
+`;
+
 export const PresentationContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -83,4 +89,47 @@ export const MainSection = styled.div`
   display: grid;
   align-items: center;
   width: 100%;
+`;
+
+export const Description = styled.p`
+  font-size: 0.95rem;
+  color: ${colors.light};
+  margin: 20px 0;
+  font-weight: 200;
+`;
+
+export const InformationWrapper = styled.div`
+  width: calc(100% - 250px);
+`;
+
+export const ProfilePicFrame = styled.div`
+  margin: 50px 0 50px 50px;
+  height: 200px;
+  width: 200px;
+  border: 1px ${colors.lightBlue} solid;
+  position: relative;
+`;
+
+export const ProfilePicFilter = styled.div`
+  background: ${colors.lightBlue};
+  mix-blend-mode: hard-light;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  ${({ slide }) =>
+    slide
+      ? "transform: translate(0, 0); opacity: 0.1;"
+      : "transform: translate(-15px, -25px);"}
+  transition: transform .2s, opacity .4s;
+`;
+export const ProfilePic = styled.img`
+  position: absolute;
+  width: 100%;
+
+  ${({ slide }) =>
+    slide
+      ? "transform: translate(0, 0);"
+      : "transform: translate(-15px, -25px);"}
+  transition: transform .2s;
 `;
