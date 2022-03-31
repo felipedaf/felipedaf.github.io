@@ -17,6 +17,9 @@ import {
   InformationWrapper,
   ProfilePic,
   ProfilePicFilter,
+  TechnologiesContainer,
+  Technology,
+  BlueLine,
 } from "./styles";
 
 import { CodeSnippet, Information, StillBuilding } from "./components";
@@ -30,6 +33,17 @@ const snippets = [
     occupation: "Software Engineer",
     focus: "Fullstack",
   },
+];
+
+const technologies = [
+  "Django",
+  "GCP",
+  "Vuejs",
+  "Git",
+  "Redis",
+  "Docker",
+  "React",
+  "Postgres",
 ];
 
 const App = () => {
@@ -83,6 +97,14 @@ const App = () => {
                 <br />
                 Here are a few technologies Ive been working with recently:
               </Description>
+              <TechnologiesContainer>
+                {technologies.map((t) => (
+                  <Technology key={t}>
+                    <BlueLine />
+                    {t}
+                  </Technology>
+                ))}
+              </TechnologiesContainer>
             </Information>
           </InformationWrapper>
           <ProfilePicFrame

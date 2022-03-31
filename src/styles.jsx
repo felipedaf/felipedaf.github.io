@@ -133,3 +133,25 @@ export const ProfilePic = styled.img`
       : "transform: translate(-15px, -25px);"}
   transition: transform .2s;
 `;
+
+export const TechnologiesContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 400px;
+`;
+
+export const Technology = styled.div`
+  font-weight: 200;
+  color: ${colors.light};
+  margin: 5px 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+`;
+
+export const BlueLine = styled.div`
+  width: 4px;
+  height: 2px;
+  background-color: ${colors.lightBlue};
+  margin-right: 4px;
+`;
