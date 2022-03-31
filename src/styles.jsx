@@ -94,7 +94,7 @@ export const MainSection = styled.div`
 export const Description = styled.p`
   font-size: 0.95rem;
   color: ${colors.light};
-  margin: 20px 0;
+  margin-top: 20px;
   font-weight: 200;
 `;
 
