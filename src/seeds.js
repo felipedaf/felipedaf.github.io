@@ -6,7 +6,7 @@ export default {
       name: {
         values: {
           first_name: "Felipe",
-          last_name: "Amorim",
+          last_name: "Ferreira",
         },
         delay: true,
         easterEgg: true,
@@ -46,5 +46,21 @@ export default {
       "React",
       "Postgres",
     ],
+  },
+  section2: {
+    Incodde: {
+      text: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lacus felis. Pellentesque vitae sapien rhoncus, suscipit sapien sit amet, tempus diam. Nam semper aliquet semper. Maecenas leo orci, tempor at est a, mollis rutrum mi. Duis varius vehicula condimentum. Nam dolor nulla, vestibulum sed semper ut, rhoncus sit amet arcu. Nam molestie volutpat rhoncus. Sed nisi dui, pulvinar nec tincidunt a, ultricies et elit. Cras pretium porttitor dui vitae euismod. Mauris porttitor ligula eu urna faucibus laoreet ut vel mauris. Pellentesque non mauris velit. Donec ultricies tempus tortor ut semper.",
+        "Nullam scelerisque pulvinar viverra. Praesent vestibulum quam facilisis tellus venenatis volutpat. Quisque non nibh tortor. Nam congue, eros sit amet vehicula maximus, nisi velit scelerisque sem, et tristique risus lorem vitae libero. Curabitur risus purus, mollis ut libero ac, tincidunt sodales erat. Donec sodales nibh quam, sed semper dui bibendum vel. Mauris nec leo augue. Fusce fringilla tincidunt rutrum. Suspendisse interdum est lacus, at tincidunt mauris scelerisque non. Maecenas mattis placerat arcu, pretium congue odio ultrices eu.",
+        "Sed fringilla consequat dui, et laoreet metus facilisis sed. Ut eros est, lobortis a lectus ut, eleifend porttitor metus. Pellentesque accumsan sem a velit tempor, sed sagittis neque imperdiet. Pellentesque tincidunt sollicitudin risus, et fringilla mi aliquet nec. Nulla id blandit elit. Nulla nec nisl nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent sodales posuere magna, a sagittis lacus lobortis euismod. Praesent nec lectus dictum, eleifend ligula ut, pulvinar orci. Proin imperdiet luctus efficitur. Sed feugiat mauris at blandit hendrerit.",
+      ],
+    },
+    Pilab: {
+      text: [
+        "Sed fringilla consequat dui, et laoreet metus facilisis sed. Ut eros est, lobortis a lectus ut, eleifend porttitor metus. Pellentesque accumsan sem a velit tempor, sed sagittis neque imperdiet. Pellentesque tincidunt sollicitudin risus, et fringilla mi aliquet nec. Nulla id blandit elit. Nulla nec nisl nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent sodales posuere magna, a sagittis lacus lobortis euismod. Praesent nec lectus dictum, eleifend ligula ut, pulvinar orci. Proin imperdiet luctus efficitur. Sed feugiat mauris at blandit hendrerit.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lacus felis. Pellentesque vitae sapien rhoncus, suscipit sapien sit amet, tempus diam. Nam semper aliquet semper. Maecenas leo orci, tempor at est a, mollis rutrum mi. Duis varius vehicula condimentum. Nam dolor nulla, vestibulum sed semper ut, rhoncus sit amet arcu. Nam molestie volutpat rhoncus. Sed nisi dui, pulvinar nec tincidunt a, ultricies et elit. Cras pretium porttitor dui vitae euismod. Mauris porttitor ligula eu urna faucibus laoreet ut vel mauris. Pellentesque non mauris velit. Donec ultricies tempus tortor ut semper.",
+        "Nullam scelerisque pulvinar viverra. Praesent vestibulum quam facilisis tellus venenatis volutpat. Quisque non nibh tortor. Nam congue, eros sit amet vehicula maximus, nisi velit scelerisque sem, et tristique risus lorem vitae libero. Curabitur risus purus, mollis ut libero ac, tincidunt sodales erat. Donec sodales nibh quam, sed semper dui bibendum vel. Mauris nec leo augue. Fusce fringilla tincidunt rutrum. Suspendisse interdum est lacus, at tincidunt mauris scelerisque non. Maecenas mattis placerat arcu, pretium congue odio ultrices eu.",
+      ],
+    },
   },
 };
