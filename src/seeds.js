@@ -6,7 +6,7 @@ export default {
       name: {
         values: {
           first_name: "Felipe",
-          last_name: "Amorim",
+          last_name: "Ferreira",
         },
         delay: true,
         easterEgg: true,

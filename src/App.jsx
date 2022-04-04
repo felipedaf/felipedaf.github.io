@@ -20,7 +20,12 @@ import {
   BlueLine,
 } from "./styles";
 import seeds from "./seeds";
-import { CodeSnippet, Information, StillBuilding } from "./components";
+import {
+  CodeSnippet,
+  Information,
+  StillBuilding,
+  TextSelector,
+} from "./components";
 
 const App = () => {
   const [profileSlide, setProfileSlide] = useState(false);
@@ -82,11 +87,9 @@ const App = () => {
         </Section>
         <Section>
           <InformationWrapper>
-            <Information
-              shifted
-              label="Where I've Worked"
-              number={2}
-            ></Information>
+            <Information shifted label="Where I've Worked" number={2}>
+              <TextSelector options={seeds.section2} />
+            </Information>
           </InformationWrapper>
         </Section>
         <Section>
