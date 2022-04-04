@@ -96,6 +96,7 @@ export const Description = styled.p`
   color: ${colors.light};
   margin-top: 20px;
   font-weight: 200;
+  white-space: pre-wrap;
 `;
 
 export const InformationWrapper = styled.div`

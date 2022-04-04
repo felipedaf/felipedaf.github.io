@@ -58,15 +58,7 @@ const App = () => {
         <Section>
           <InformationWrapper>
             <Information label="About Me" number={1}>
-              <Description>
-                {seeds.section1.text.map((p) => (
-                  <>
-                    {p}
-                    <br />
-                    <br />
-                  </>
-                ))}
-              </Description>
+              <Description>{seeds.section1.text}</Description>
               <TechnologiesContainer>
                 {seeds.section1.technologies.map((t) => (
                   <Technology key={t}>
