@@ -18,6 +18,7 @@ export const ContentContainer = styled.p`
   flex-grow: 1;
   height: 400px;
   overflow-y: auto;
+  max-width: 550px;
   font-weight: 100;
   font-size: 0.95rem;
   color: ${colors.light};
