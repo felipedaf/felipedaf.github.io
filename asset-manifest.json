@@ -1,22 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.92c77bae.chunk.css",
-    "main.js": "/static/js/main.7cc59074.chunk.js",
-    "main.js.map": "/static/js/main.7cc59074.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ac40e108.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ac40e108.js.map",
-    "static/js/2.573e5161.chunk.js": "/static/js/2.573e5161.chunk.js",
-    "static/js/2.573e5161.chunk.js.map": "/static/js/2.573e5161.chunk.js.map",
-    "static/js/3.7a572ea1.chunk.js": "/static/js/3.7a572ea1.chunk.js",
-    "static/js/3.7a572ea1.chunk.js.map": "/static/js/3.7a572ea1.chunk.js.map",
+    "main.css": "/static/css/main.a543166b.css",
+    "main.js": "/static/js/main.7d57257d.js",
+    "static/js/787.02d03258.chunk.js": "/static/js/787.02d03258.chunk.js",
+    "static/media/whatsappclone.gif": "/static/media/whatsappclone.c2777a22155b13d7e5b9.gif",
     "index.html": "/index.html",
-    "static/css/main.92c77bae.chunk.css.map": "/static/css/main.92c77bae.chunk.css.map",
-    "static/js/2.573e5161.chunk.js.LICENSE.txt": "/static/js/2.573e5161.chunk.js.LICENSE.txt"
+    "main.a543166b.css.map": "/static/css/main.a543166b.css.map",
+    "main.7d57257d.js.map": "/static/js/main.7d57257d.js.map",
+    "787.02d03258.chunk.js.map": "/static/js/787.02d03258.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac40e108.js",
-    "static/js/2.573e5161.chunk.js",
-    "static/css/main.92c77bae.chunk.css",
-    "static/js/main.7cc59074.chunk.js"
+    "static/css/main.a543166b.css",
+    "static/js/main.7d57257d.js"
   ]
 }
