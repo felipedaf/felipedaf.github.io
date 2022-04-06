@@ -96,6 +96,7 @@ export const Description = styled.p`
   color: ${colors.light};
   margin-top: 20px;
   font-weight: 200;
+  white-space: pre-wrap;
 `;
 
 export const InformationWrapper = styled.div`
@@ -116,7 +117,7 @@ export const ProfilePicFilter = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   ${({ slide }) =>
     slide
       ? "transform: translate(0, 0); opacity: 0.1;"

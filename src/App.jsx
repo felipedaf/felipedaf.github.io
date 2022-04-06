@@ -25,6 +25,7 @@ import {
   Information,
   StillBuilding,
   TextSelector,
+  Project,
 } from "./components";
 
 const App = () => {
@@ -63,15 +64,7 @@ const App = () => {
         <Section>
           <InformationWrapper>
             <Information label="About Me" number={1}>
-              <Description>
-                {seeds.section1.text.map((p) => (
-                  <>
-                    {p}
-                    <br />
-                    <br />
-                  </>
-                ))}
-              </Description>
+              <Description>{seeds.section1.text}</Description>
               <TechnologiesContainer>
                 {seeds.section1.technologies.map((t) => (
                   <Technology key={t}>
@@ -94,25 +87,31 @@ const App = () => {
           </ProfilePicFrame>
         </Section>
         <Section>
-          <InformationWrapper>
-            <Information shifted label="Where I've Worked" number={2}>
-              <TextSelector options={seeds.section2} />
-            </Information>
-          </InformationWrapper>
+          <Information shifted label="Where I've Worked" number={2}>
+            <TextSelector options={seeds.section2} />
+          </Information>
         </Section>
         <Section>
-          <InformationWrapper>
-            <Information
-              label="Some Things I’ve Built"
-              number={3}
-            ></Information>
-          </InformationWrapper>
+          <Information label="Some Things I’ve Built" number={3}>
+            {seeds.section3.projects.map((p) => {
+              return (
+                <Project
+                  key={p.title}
+                  name={p.title}
+                  description={p.description}
+                  image={p.image}
+                  technologies={p.technologies}
+                  right={p.right}
+                ></Project>
+              );
+            })}
+          </Information>
         </Section>
 
         {/* Add something above here */}
-        <Section>
+        {/* <Section>
           <StillBuilding />
-        </Section>
+        </Section> */}
       </ContentContainer>
     </Wrapper>
   );
