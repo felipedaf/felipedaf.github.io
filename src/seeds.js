@@ -79,9 +79,28 @@ homework using their smartphones from home.`,
     },
     Incodde: {
       text: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lacus felis. Pellentesque vitae sapien rhoncus, suscipit sapien sit amet, tempus diam. Nam semper aliquet semper. Maecenas leo orci, tempor at est a, mollis rutrum mi. Duis varius vehicula condimentum. Nam dolor nulla, vestibulum sed semper ut, rhoncus sit amet arcu. Nam molestie volutpat rhoncus. Sed nisi dui, pulvinar nec tincidunt a, ultricies et elit. Cras pretium porttitor dui vitae euismod. Mauris porttitor ligula eu urna faucibus laoreet ut vel mauris. Pellentesque non mauris velit. Donec ultricies tempus tortor ut semper.",
-        "Nullam scelerisque pulvinar viverra. Praesent vestibulum quam facilisis tellus venenatis volutpat. Quisque non nibh tortor. Nam congue, eros sit amet vehicula maximus, nisi velit scelerisque sem, et tristique risus lorem vitae libero. Curabitur risus purus, mollis ut libero ac, tincidunt sodales erat. Donec sodales nibh quam, sed semper dui bibendum vel. Mauris nec leo augue. Fusce fringilla tincidunt rutrum. Suspendisse interdum est lacus, at tincidunt mauris scelerisque non. Maecenas mattis placerat arcu, pretium congue odio ultrices eu.",
-        "Sed fringilla consequat dui, et laoreet metus facilisis sed. Ut eros est, lobortis a lectus ut, eleifend porttitor metus. Pellentesque accumsan sem a velit tempor, sed sagittis neque imperdiet. Pellentesque tincidunt sollicitudin risus, et fringilla mi aliquet nec. Nulla id blandit elit. Nulla nec nisl nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent sodales posuere magna, a sagittis lacus lobortis euismod. Praesent nec lectus dictum, eleifend ligula ut, pulvinar orci. Proin imperdiet luctus efficitur. Sed feugiat mauris at blandit hendrerit.",
+        `Incodde is a software house that make software projects for clients in all parts of Brazil and internal projects with SaaS model.\n`,
+        `Contributions:`,
+        `Developed and tested components for the creation of a blog alongside
+CMS and Server-side rendering to maintain the SEO.\n
+Developed and tested for both components and API services with the
+goal of building a software that unifies the main ad platforms(Facebook, Google, Taboola) into one easy and user-friendly interface.\n
+Developed components for the making of a modern UI that receives
+data from an API which tracks and delivers it (similar to a web crawler)
+from Instagram stories.\n
+Developed API services for a digital affiliate marketing service platform.\n`,
+        `Technologies I used:`,
+        `- React`,
+        `- Vuejs`,
+        `- Expressjs`,
+        `- Docker`,
+        `- Nginx`,
+        `- Git`,
+        `- Bash`,
+        `- Postgres`,
+        `- MongoDB`,
+        `- Jest`,
+        `- AWS`,
       ],
     },
   },
