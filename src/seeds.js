@@ -28,12 +28,12 @@ export default {
             I'm a software engineer and Computer Science student 
             specializing in building (and occasionally designing) 
             large scale distributed systems. Currently, I'm focused 
-            on how to build backend systems and scale it.
+            on how to build user-friendly products and scale it.
         `,
   },
   section1: {
     text: `Hello! My name is Felipe and I enjoy creating things that live on the internet. My interest in programming started back in 2014 when I decided to try editing some Minecraft server plugins — turns out I realised that to modify a simple plugin functionallity in Java required a lot of knowledge, so I started to learn logic and programming!
-      \n\nFast-forward to today, and I've had the privilege of working at a important brazilian laboratory and a software house with amazing developers. My main focus these days is building experiences that meaningfully improve people's lives today and set the stage for even bigger improvements in the future.
+      \n\nFast-forward to today, and I've had the privilege of working at a important brazilian laboratory and a software house with amazing developers. I learned something new in every place I worked, my co-workers contributed a lot in this development, today I could say that I have a good knowledge both in Frontend and Backend.
       \n\nHere are a few technologies I've been working with recently:`,
     technologies: [
       "Typescript",
