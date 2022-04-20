@@ -20,7 +20,9 @@ const Project = ({ name, description, technologies = [], image, right }) => {
   const descriptionDiv = useRef(null);
 
   useEffect(() => {
-    setDescriptionHeight(descriptionDiv.current.clientHeight);
+    setTimeout(() => {
+      setDescriptionHeight(descriptionDiv.current.clientHeight);
+    }, 1);
   }, [description]);
 
   return (
