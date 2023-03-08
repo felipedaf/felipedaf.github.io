@@ -18,15 +18,15 @@ import {
   TechnologiesContainer,
   Technology,
   BlueLine,
-} from "./styles";
-import seeds from "./seeds";
+} from "../styles";
+import seeds from "../seeds";
 import {
   CodeSnippet,
   Information,
   StillBuilding,
   TextSelector,
   Project,
-} from "./components";
+} from "../components";
 
 const App = () => {
   const [profileSlide, setProfileSlide] = useState(false);

@@ -1,5 +1,5 @@
-import { SnippetContainer1, SnippetContainer2 } from "./styles";
-import wa from "./assets/whatsappclone.gif";
+import { SnippetContainer1, SnippetContainer2 } from "../styles";
+import wa from "../images/whatsappclone.gif";
 
 export default {
   introduction: {
