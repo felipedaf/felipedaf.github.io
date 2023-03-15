@@ -27,7 +27,7 @@ const CodeSnippet = ({ name, value, easterEgg = false, delay }) => {
     if (easterEggUsed.current || !easterEgg) return;
 
     const keyObj = `"nickname": `;
-    const valObj = `"Suru"`;
+    const valObj = `"Pxon"`;
 
     let incr = 0;
     for (let i = 0; i < keyObj.length; i++) {

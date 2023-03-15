@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 680px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,5 +124,7 @@ export const Technology = styled.h3`
 
 export const Image = styled.img`
   width: 100%;
+  height: 100%;
+  position: absolute;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
 `;

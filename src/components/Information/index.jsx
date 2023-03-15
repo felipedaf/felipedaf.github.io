@@ -37,7 +37,7 @@ Information.propTypes = {
   shifted: PropTypes.bool,
   number: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
 };
 
 export default Information;

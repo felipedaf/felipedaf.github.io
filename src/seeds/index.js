@@ -1,4 +1,4 @@
-import { SnippetContainer1, SnippetContainer2 } from "../styles";
+import { SnippetContainer1, SnippetContainer2 } from "../pages/index/styles";
 import wa from "../images/whatsappclone.gif";
 
 export default {

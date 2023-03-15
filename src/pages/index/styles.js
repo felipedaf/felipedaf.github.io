@@ -1,10 +1,16 @@
 import styled from "styled-components";
-import colors from "./colors";
+import colors from "../../colors";
 
 export const Wrapper = styled.div`
   min-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: ${colors.dark};
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -12,11 +18,26 @@ export const ContentContainer = styled.div`
   max-width: 1000px;
   min-height: 100vh;
   margin: auto;
+  position: relative;
 `;
 
 export const Section = styled.div`
   display: flex;
-  margin-bottom: 240px;
+  margin-bottom: 60px;
+  scroll-snap-align: center;
+`;
+
+export const ScreenSectionWrapper = styled.section`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+`;
+
+export const ScreenSection = styled.div`
+  display: flex;
 `;
 
 export const ShiftedSection = styled.div`
@@ -84,7 +105,7 @@ export const SnippetContainer2 = styled.div`
   bottom: -40%;
 `;
 
-export const MainSection = styled.div`
+export const MainSection = styled.section`
   min-height: 100vh;
   display: grid;
   align-items: center;
@@ -155,4 +176,10 @@ export const BlueLine = styled.div`
   height: 2px;
   background-color: ${colors.lightBlue};
   margin-right: 4px;
+`;
+
+export const AnimationsContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
 `;

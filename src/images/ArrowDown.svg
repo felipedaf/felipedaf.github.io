@@ -1,0 +1,25 @@
+<svg id="ecJxz4HpoMO1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <g id="ecJxz4HpoMO2_to" transform="translate(150,100)">
+        <g transform="translate(-150.000053,-136.706725)">
+            <g transform="matrix(1.850198-1.850198 1.850196 1.850196-261.674418 198.574749)">
+                <path d="M94.285156,75.068422v55.128372" fill="rgb(0, 168, 232)"
+                    stroke="rgb(0, 168, 232)"
+                    stroke-width="4" />
+                <path d="M94.285156,75.068422v55.128372"
+                    transform="matrix(0-1 1 0 17.237814 222.503028)" fill="rgb(0, 168, 232)"
+                    stroke="rgb(0, 168, 232)"
+                    stroke-width="4" />
+            </g>
+            <g transform="matrix(1.850198-1.850198 1.850196 1.850196-261.674418 138.625804)">
+                <path d="M94.285156,75.068422v55.128372" fill="rgb(0, 168, 232)"
+                    stroke="rgb(0, 168, 232)"
+                    stroke-width="4" />
+                <path
+                    d="M94.285156,75.068422v55.128372"
+                    transform="matrix(0-1 1 0 17.237814 222.503028)" fill="rgb(0, 168, 232)"
+                    stroke="rgb(0, 168, 232)" stroke-width="4" />
+            </g>
+        </g>
+    </g>
+</svg>

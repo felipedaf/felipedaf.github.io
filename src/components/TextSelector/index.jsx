@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import {
   ContentContainer,
@@ -9,6 +9,13 @@ import {
 
 const TextSelector = ({ options }) => {
   const [selected, setSelected] = useState(Object.keys(options)[0]);
+  const contentContainer = useRef(null);
+
+  useEffect(() => {
+    contentContainer.current.addEventListener("wheel", (e) => {
+      e.stopPropagation();
+    });
+  }, []);
 
   return (
     <Wrapper>
@@ -25,7 +32,9 @@ const TextSelector = ({ options }) => {
           );
         })}
       </SelectContainer>
-      <ContentContainer>{options[selected].text.join("\n\n")}</ContentContainer>
+      <ContentContainer ref={contentContainer}>
+        {options[selected].text.join("\n\n")}
+      </ContentContainer>
     </Wrapper>
   );
 };
