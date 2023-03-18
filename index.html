@@ -195,7 +195,10 @@ UI Clone</h4></div><div height="0" class="styles__DescriptionContainer-sc-1h45gp
         const scrollingElement = document.querySelector('#page-wrapper');
         scrollingElement.scrollTo(0, 100);
         const scrollListener = (e) => {
-          e.preventDefault;
+          e.preventDefault();
+          e.stopPropagation();
+
+          return false;
         }
         window.globalListeners = {
           scroll: scrollListener
