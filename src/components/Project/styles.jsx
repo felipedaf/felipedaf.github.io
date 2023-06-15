@@ -15,6 +15,8 @@ export const Wrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   width: 500px;
+  height: 100%;
+  aspect-ratio: 16/9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +124,7 @@ export const Technology = styled.h3`
         `}
 `;
 
-export const Image = styled.img`
+export const Video = styled.video`
   width: 100%;
   height: 100%;
   position: absolute;

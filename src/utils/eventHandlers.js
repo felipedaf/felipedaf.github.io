@@ -36,7 +36,7 @@ class PageEventHandlers {
         anime({
           targets: this.eventsData.wheel,
           position: offsetTop,
-          duration: 300,
+          duration: 450,
           easing: "spring(1, 90, 12, 0)",
           update: () => {
             this.element.scrollTo(0, this.eventsData.wheel.position);

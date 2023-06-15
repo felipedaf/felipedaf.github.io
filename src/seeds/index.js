@@ -1,5 +1,6 @@
-import { SnippetContainer1, SnippetContainer2 } from "../pages/index/styles";
-import wa from "../images/whatsappclone.gif";
+import { SnippetContainer1, SnippetContainer2 } from "../styles/index/styles";
+import whatsappVideo from "../images/whatsapp.mp4";
+import cutclipVideo from "../images/cutclip.mp4";
 
 export default {
   introduction: {
@@ -109,8 +110,7 @@ Developed API services for a digital affiliate marketing service platform.\n`,
       {
         label: `Featured Project`,
         title: `CUTCLIP`,
-        image:
-          "https://camo.githubusercontent.com/a16f7ed8da746953d9a03e97f6313d0b21ff441a1c741f4916fde5c867f0c402/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6f7a48584f4742463530515333316b7155502f67697068792e676966",
+        image: cutclipVideo,
         description: `An application that provides an simple UI to the user that allows to select any part of an youtube video and download it without the need to spend time and internet connection downloading the entire video.`,
         technologies: [
           "Vuejs",
@@ -124,7 +124,7 @@ Developed API services for a digital affiliate marketing service platform.\n`,
       {
         label: `Featured Project`,
         title: `Whatsapp Web\nUI Clone`,
-        image: wa,
+        image: whatsappVideo,
         description: `A project created with the objective to learn react and it's patterns cloning the Whatsapp Web UI.`,
         technologies: ["React", "Redux", "Styled Components"],
         right: false,

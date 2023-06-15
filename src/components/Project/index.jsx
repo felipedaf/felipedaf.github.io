@@ -4,7 +4,7 @@ import {
   ContentWrapper,
   ImageWrapper,
   Wrapper,
-  Image,
+  Video,
   ImageFilter,
   TitleContainer,
   DescriptionContainer,
@@ -29,7 +29,9 @@ const Project = ({ name, description, technologies = [], image, right }) => {
     <Wrapper right={right}>
       <ImageWrapper>
         <ImageFilter />
-        <Image src={image} />
+        <Video autoPlay muted loop>
+          <source src={image} type="video/mp4" />
+        </Video>
       </ImageWrapper>
       <ContentWrapper>
         <TitleContainer right={right}>
