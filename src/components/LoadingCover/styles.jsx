@@ -42,9 +42,14 @@ export const PieceWrapper = styled.div`
   align-items: center;
   justify-content: center;
   transform: rotate(-45deg);
-  animation: ${zIndexChaging}
-    ${animationDelayInSeconds + animationDurationInSeconds + 0.1}s linear
-    forwards;
+  z-index: 100;
+  ${({ isComplete }) =>
+    isComplete &&
+    css`
+      animation: ${zIndexChaging}
+        ${animationDelayInSeconds + animationDurationInSeconds + 0.1}s linear
+        forwards;
+    `}
 `;
 
 const openTopLeftPiece = keyframes`

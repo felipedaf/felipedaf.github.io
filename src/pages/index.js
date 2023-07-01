@@ -21,6 +21,7 @@ import {
   ScreenSection,
   ScreenSectionWrapper,
   AnimationsContainer,
+  ParticleContainer,
 } from "../styles/index/styles";
 import seeds from "../seeds";
 import {
@@ -32,13 +33,20 @@ import {
 } from "../components";
 import PageEventHandlers from "../utils/eventHandlers";
 import ScrollDown from "../components/ScrollDown";
-import { changeLoadingStateSmoothly, loadingPromises } from "./utils/loading";
+import {
+  changeLoadingStateSmoothly,
+  loadingPromises,
+} from "../utils/loading.utils";
+import particlesConfig from "../assets/particles.json";
 
 const App = () => {
   const [profileSlide, setProfileSlide] = useState(false);
   const [showLoadingCover, setShowLoadingCover] = useState(true);
   const [loadingPercentage, setLoadingPercentage] = useState(0);
+  const [showScrollDown, setShowScrollDown] = useState(false);
   const scrollElement = useRef(null);
+
+  console.log("render");
 
   useEffect(() => {
     if (window !== undefined && document !== undefined) {
@@ -51,10 +59,11 @@ const App = () => {
 
       const timeouts = loadingPromises(setLoadingPercentage);
 
-      window.addEventListener("load", () => {
+      setTimeout(() => {
         timeouts.forEach((t) => clearTimeout(t));
         changeLoadingStateSmoothly(loadingPercentage, 1, setLoadingPercentage);
-      });
+      }, 1000);
+
       return () => {
         eventHandler.disconnect();
       };
@@ -66,14 +75,20 @@ const App = () => {
       {showLoadingCover && (
         <LoadingCover
           percentage={Number(loadingPercentage)}
-          onFinishAnimation={() => setShowLoadingCover(false)}
+          onFinishAnimation={() => {
+            setShowScrollDown(true);
+            setShowLoadingCover(false);
+          }}
         />
       )}
       <Wrapper id="page-wrapper" ref={scrollElement}>
+        <ParticleContainer id="particles-js"></ParticleContainer>
         <ContentContainer>
-          <AnimationsContainer>
-            <ScrollDown />
-          </AnimationsContainer>
+          {showScrollDown && (
+            <AnimationsContainer>
+              <ScrollDown />
+            </AnimationsContainer>
+          )}
           <MainSection>
             <Section>
               <PresentationContainer>

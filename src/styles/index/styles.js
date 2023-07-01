@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const ParticleContainer = styled.div``;
+
 export const ContentContainer = styled.div`
   padding: 100px 10px;
   max-width: 1000px;
