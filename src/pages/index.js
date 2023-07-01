@@ -32,10 +32,12 @@ import {
 } from "../components";
 import PageEventHandlers from "../utils/eventHandlers";
 import ScrollDown from "../components/ScrollDown";
+import { changeLoadingStateSmoothly, loadingPromises } from "./utils/loading";
 
 const App = () => {
   const [profileSlide, setProfileSlide] = useState(false);
   const [showLoadingCover, setShowLoadingCover] = useState(true);
+  const [loadingPercentage, setLoadingPercentage] = useState(0);
   const scrollElement = useRef(null);
 
   useEffect(() => {
@@ -47,6 +49,12 @@ const App = () => {
       const eventHandler = new PageEventHandlers(scrollElement.current);
       eventHandler.addScrollEvent(document.querySelectorAll("section"));
 
+      const timeouts = loadingPromises(setLoadingPercentage);
+
+      window.addEventListener("load", () => {
+        timeouts.forEach((t) => clearTimeout(t));
+        changeLoadingStateSmoothly(loadingPercentage, 1, setLoadingPercentage);
+      });
       return () => {
         eventHandler.disconnect();
       };
@@ -57,7 +65,8 @@ const App = () => {
     <>
       {showLoadingCover && (
         <LoadingCover
-          onFinishCloseAnimation={() => setShowLoadingCover(false)}
+          percentage={Number(loadingPercentage)}
+          onFinishAnimation={() => setShowLoadingCover(false)}
         />
       )}
       <Wrapper id="page-wrapper" ref={scrollElement}>

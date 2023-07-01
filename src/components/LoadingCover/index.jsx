@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BottomRightPiece,
+  LoadingText,
   PieceWrapper,
   TopLeftPiece,
   Wrapper,
 } from "./styles";
 import PropTypes from "prop-types";
 
-const LoadingCover = ({ onFinishCloseAnimation, percentage }) => {
+const LoadingCover = ({ onFinishAnimation, percentage }) => {
+  const value = Math.round(percentage * 100) + "%";
+  const isComplete = value === "100%";
+
   return (
     <Wrapper>
       <PieceWrapper>
-        <TopLeftPiece />
-        <BottomRightPiece />
+        <LoadingText {...{ isComplete }}>
+          <span>{value}</span>
+        </LoadingText>
+        <TopLeftPiece {...{ isComplete }} />
+        <BottomRightPiece {...{ isComplete }} />
       </PieceWrapper>
     </Wrapper>
   );
 };
 
 LoadingCover.propTypes = {
-  onFinishCloseAnimation: PropTypes.func,
+  onFinishAnimation: PropTypes.func,
   percentage: PropTypes.number,
 };
 

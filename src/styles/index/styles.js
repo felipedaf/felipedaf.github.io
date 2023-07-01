@@ -97,11 +97,14 @@ export const Introduction = styled.p`
 
 export const SnippetContainer1 = styled.div`
   position: absolute;
+  z-index: 10;
   right: 0;
 `;
 
 export const SnippetContainer2 = styled.div`
   position: absolute;
+  z-index: 10;
+
   bottom: -40%;
 `;
 
