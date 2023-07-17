@@ -14,7 +14,19 @@ class PageEventHandlers {
     };
   }
 
-  addScrollEvent(sessions = []) {
+  addScrollEvent(sessions = [], initialPosition = 100) {
+    this.eventsData.wheel.position = initialPosition;
+    this.element.scrollTo(0, initialPosition);
+
+    const scrollListener = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      return false;
+    };
+
+    this.element.addEventListener("scroll", scrollListener);
+
     let leading = true;
 
     const scrollResolver = _.throttle(
