@@ -37,7 +37,7 @@ import {
   changeLoadingStateSmoothly,
   loadingPromises,
 } from "../utils/loading.utils";
-import particlesConfig from "../assets/particles.json";
+// import particlesConfig from "../assets/particles.json";
 
 const App = () => {
   const [profileSlide, setProfileSlide] = useState(false);
@@ -45,8 +45,6 @@ const App = () => {
   const [loadingPercentage, setLoadingPercentage] = useState(0);
   const [showScrollDown, setShowScrollDown] = useState(false);
   const scrollElement = useRef(null);
-
-  console.log("render");
 
   useEffect(() => {
     if (window !== undefined && document !== undefined) {
